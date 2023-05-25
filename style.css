@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.container{
+  width: 100%; /* Defina a largura do contêiner conforme necessário */
+  height: 80%; /* Defina a altura do contêiner conforme necessário */
+  overflow: hidden; 
+  background-color: red;
+  
+}
+
+.meu-container {
+  float: left;
+  padding: 20px;
+  margin-top: 10px; /*espaço entre o container e cabeçalho*/
+  margin-left: 10%;
+  background-color: #852323;
+  width: 350px; /* Defina a largura do contêiner conforme necessário */
+  height: 500px; /* Defina a altura do contêiner conforme necessário */
+  overflow: hidden; 
+}
+
+/*carrossel*/
+.swiper {
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .swiper {
+    height: 270px;
+  }
+}
